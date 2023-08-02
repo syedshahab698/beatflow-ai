@@ -28,11 +28,13 @@ To run RapBot Beats, you will need the following dependencies:
    ```bash
    git clone https://github.com/your-username/beatflow-ai.git
    cd beatflow-ai
+   ```
 
 ### Install the Required Python Packages
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Set up OpenAI GPT-3.5 API Access
 
@@ -46,11 +48,13 @@ To use the OpenAI GPT-3.5-based AI model, you'll need access to the OpenAI GPT-3
 
    ```bash
    set OPENAI_API_KEY "YOUR_API_KEY"
+   ```
 
 ### On macOS and Linux:
 
   ```bash
   export OPENAI_API_KEY="YOUR_API_KEY"
+```
 
 ### Customization
 You can customize the AI model, adjust volume levels, and fine-tune the generated rap songs. Check the documentation and source code for more details on customization options.
