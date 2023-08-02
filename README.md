@@ -5,7 +5,8 @@
 RapBot Beats is an AI-powered rap song generator that combines lyrics with background music to create original rap songs automatically. This project utilizes Python and the PyDub library for audio processing and synthesis. The AI model behind the rap song generator is powered by OpenAI's GPT-3.5 architecture.
 ## Listen to the Rap Song
 
-Click [here](https://github.com/syedshahab698/beatflow-ai/blob/master/rap_song.mp3) to listen to the rap song!
+https://github.com/syedshahab698/beatflow-ai/assets/55235435/b7b94fb7-9e54-479e-8e12-f494d501e4d9
+
 
 
 ## Features
