@@ -3,7 +3,7 @@ import openai
 from pydub import AudioSegment
 import os
 import pyttsx3
-from pyngrok import ngrok
+# from pyngrok import ngrok
 
 
 # Streamlit app configuration
