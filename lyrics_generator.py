@@ -3,6 +3,8 @@ import openai
 from pydub import AudioSegment
 import os
 import pyttsx3
+from pyngrok import ngrok
+
 
 # Streamlit app configuration
 st.title("AI Rapper Application")
@@ -32,7 +34,7 @@ def generate_rap_song(scenario, background_music_path):
     background_music = AudioSegment.from_file(background_music_path, format="mp3")
     # Split the background music to get the first 5 seconds
     background_music_5s = background_music[:11000]
-    background_music = background_music - 20
+    background_music = background_music - 15
     # Generate rap lyrics
     st.write("Generating rap lyrics...")
     lyrics = generate_lyrics(scenario)
@@ -80,3 +82,8 @@ if st.button("Rap!"):
         st.audio(rap_song_mp3, format="audio/mp3")
     else:
         st.write("Please enter a scenario to continue.")
+
+
+# Setup a tunnel to the streamlit port 8501
+# public_url = ngrok.connect(port='8501')
+# st.write("Public URL:", public_url)
