@@ -2,7 +2,8 @@ import streamlit as st
 import openai
 from pydub import AudioSegment
 import os
-import pyttsx3
+# import pyttsx3
+from gtts import gTTS
 # from pyngrok import ngrok
 
 
@@ -43,12 +44,12 @@ def generate_rap_song(scenario, background_music_path):
     st.write(lyrics)
 
     # Convert lyrics to MP3
-    # lyrics_tts = gTTS(lyrics, lang="en-uk", slow=False)
+    lyrics_tts = gTTS(lyrics, lang="en-uk", slow=False)
     lyrics_mp3 = "lyrics.mp3"
-    # lyrics_tts.save(lyrics_mp3)
-    engine = pyttsx3.init()
-    engine.save_to_file(lyrics, lyrics_mp3)
-    engine.runAndWait()
+    lyrics_tts.save(lyrics_mp3)
+    # engine = pyttsx3.init()
+    # engine.save_to_file(lyrics, lyrics_mp3)
+    # engine.runAndWait()
     
 
     # Load lyrics audio
