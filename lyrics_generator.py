@@ -66,7 +66,7 @@ def generate_rap_song(scenario, background_music_path):
 
     # Clean up the temporary lyrics MP3 file
     os.remove(lyrics_mp3)
-    engine.stop()
+    # engine.stop()
 
     return rap_song_mp3
 
